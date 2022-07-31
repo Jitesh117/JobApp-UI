@@ -21,7 +21,9 @@ class JobCard extends StatelessWidget {
         decoration: BoxDecoration(
             color: imagePath == 'assets/uber.png'
                 ? Colors.grey.shade800
-                : Colors.white,
+                : imagePath == 'assets/apple.png'
+                    ? Colors.grey.shade300
+                    : Colors.white,
             borderRadius: BorderRadius.circular(10)),
         child: Padding(
           padding: const EdgeInsets.all(10.0),

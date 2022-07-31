@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_app_ui/job_card.dart';
+import 'package:job_app_ui/recent_add.dart';
 
 class MyHome extends StatefulWidget {
   const MyHome({Key? key}) : super(key: key);
@@ -153,11 +154,48 @@ class MyHomeState extends State<MyHome> {
               ),
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
           Expanded(
             // height: 300,
             flex: 2,
-            child: ListView(
-              children: [Container()],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: ListView(
+                children: const [
+                  RecentAdd(
+                    imagePath: 'assets/nike.png',
+                    role: 'UI/UX Designer',
+                    company: 'Nike',
+                    salary: '\$45/h',
+                  ),
+                  RecentAdd(
+                    imagePath: 'assets/apple.png',
+                    role: 'Software Designer',
+                    company: 'Apple',
+                    salary: '\$55/h',
+                  ),
+                  RecentAdd(
+                    imagePath: 'assets/google.png',
+                    role: 'Product Designer',
+                    company: 'Google',
+                    salary: '\$60/h',
+                  ),
+                  RecentAdd(
+                    imagePath: 'assets/uber.png',
+                    role: 'App Developer',
+                    company: 'Uber',
+                    salary: '\$75/h',
+                  ),
+                  RecentAdd(
+                    imagePath: 'assets/microsoft.png',
+                    role: 'Backend Developer',
+                    company: 'Microsoft',
+                    salary: '\$45/h',
+                  ),
+                ],
+              ),
             ),
           )
         ],
