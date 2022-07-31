@@ -3,5 +3,5 @@ A Job App UI clone made in flutter
 
 # How it looks like
 <p align = "center">
-<img src = "./screenshots/jobUI.gif">
+<img width = 250 src = "./screenshots/jobUI.gif">
 </p>
